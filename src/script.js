@@ -2,6 +2,14 @@
 
 // TODO - write your code here.
 
-let randomDamage = () => 
+// const nameOfFunction = () => {
+// return randomNumberStuff
+// }
 
-let chooseOption = (opt1, opt2) => 
+// const randomDamage = () => {
+//     return
+//     }
+
+const randomDamage = () => Math.floor(Math.random() * 10);
+
+const chooseOption = (opt1, opt2) => {};
