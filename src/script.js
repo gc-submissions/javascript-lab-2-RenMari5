@@ -39,9 +39,10 @@ const fight = (player1, player2, player1Health, player2Health) => {
   while (true) {
     if (attacker === player1) {
       player2Health = attackPlayer(player2Health);
-      return logHealth(player2, player2Health);
+      console.log(logHealth(player2, player2Health));
     } else if (isDead(player2Health) === true) {
-      return logDeath(player1, player2);
+      console.log(logDeath(player1, player2));
     }
+    break;
   }
 };
