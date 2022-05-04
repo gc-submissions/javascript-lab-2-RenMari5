@@ -33,3 +33,12 @@ const isDead = (health) => {
   if (health <= 0);
   return true;
 };
+
+const fight = (player1, player2, player1Health, player2Health) => {
+  const attacker = chooseOption(player1, player2);
+  while (true) {
+    if (attacker === player1) {
+      player2Health = attackPlayer(player2Health);
+    }
+  }
+};
