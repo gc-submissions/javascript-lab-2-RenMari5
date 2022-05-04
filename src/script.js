@@ -42,13 +42,13 @@ function fight(_player1, _player2, _player1Health, _player2Health) {
       _player2Health = attackPlayer(_player2Health);
       console.log(logHealth(_player2, _player2Health));
     } else if (isDead(_player2Health) === true) {
-      console.log(logDeath(_player1, _player2));
+      logDeath(_player1, _player2);
       break;
     } else if (attacker === _player2) {
       _player1Health = attackPlayer(_player1Health);
       logHealth(_player1, _player1Health);
     } else if (isDead(_player1Health) === true) {
-      console.log(logDeath(_player2, _player1));
+      logDeath(_player2, _player1);
     }
     break;
   }
