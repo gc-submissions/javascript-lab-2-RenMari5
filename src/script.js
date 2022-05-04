@@ -28,3 +28,8 @@ const logHealth = (player, health) => {
 const logDeath = (winner, loser) => {
   console.log(`${winner} defeated ${loser}`);
 };
+
+const isDead = (health) => {
+  if (health <= 0);
+  return true;
+};
