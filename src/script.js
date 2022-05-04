@@ -35,7 +35,7 @@ const isDead = (health) => {
   return health <= 0 ? true : false;
 };
 
-const fight = (player1, player2, _player1Health, player2Health) => {
+function fight(player1, player2, _player1Health, player2Health) {
   while (true) {
     let attacker = chooseOption(player1, player2);
     if (attacker === player1) {
@@ -46,4 +46,6 @@ const fight = (player1, player2, _player1Health, player2Health) => {
     }
     break;
   }
-};
+}
+
+fight(Leon, Chris, 100, 100);
