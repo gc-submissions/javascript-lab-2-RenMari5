@@ -55,3 +55,5 @@ function fight(_player1, _player2, _player1Health, _player2Health) {
 }
 
 fight("Leon", "Chris", 100, 100);
+
+// Not sure why it keeps giving me a return of "Leon/Chris health: NaN"
