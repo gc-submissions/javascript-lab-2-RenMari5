@@ -24,3 +24,7 @@ function attackPlayer(health) {
 const logHealth = (player, health) => {
   console.log(`${player} health: ${health}`);
 };
+
+const logDeath = (winner, loser) => {
+  console.log(`${winner} defeated ${loser}`);
+};
