@@ -35,17 +35,27 @@ const isDead = (health) => {
   return health <= 0 ? true : false;
 };
 
-function fight(player1, player2, _player1Health, player2Health) {
+function fight(_player1, _player2, _player1Health, _player2Health) {
   while (true) {
-    let attacker = chooseOption(player1, player2);
-    if (attacker === player1) {
-      player2Health = attackPlayer(player2Health);
-      console.log(logHealth(player2, player2Health));
-    } else if (isDead(player2Health) === true) {
-      console.log(logDeath(player1, player2));
+    let _player1 = "";
+    let _player2 = "";
+    let attacker = chooseOption(_player1, _player2);
+    if (attacker === _player1) {
+      _player2Health = attackPlayer;
+      attackPlayer(_player2Health);
+      console.log(logHealth(_player2, _player2Health));
+    } else if (isDead(_player2Health) === true) {
+      console.log(logDeath(_player1, _player2));
+      break;
+    } else if (attacker === _player2) {
+      _player1Health = attackPlayer;
+      attackPlayer(_player1Health);
+      logHealth(_player1, _player1Health);
+    } else if (isDead(_player1Health) === true) {
+      console.log(logDeath(_player2, _player1));
     }
     break;
   }
 }
 
-fight(Leon, Chris, 100, 100);
+fight("Leon", "Chris", 100, 100);
