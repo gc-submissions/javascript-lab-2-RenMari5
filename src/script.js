@@ -32,11 +32,10 @@ const logDeath = (winner, loser) => {
 };
 
 const isDead = (health) => {
-  if (health <= 0);
-  return true;
+  return health <= 0 ? true : false;
 };
 
-const fight = (player1, player2, player1Health, player2Health) => {
+const fight = (player1, player2, _player1Health, player2Health) => {
   const attacker = chooseOption(player1, player2);
   while (true) {
     if (attacker === player1) {
